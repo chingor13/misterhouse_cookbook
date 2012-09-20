@@ -23,5 +23,5 @@ default[:misterhouse][:group] = "mh"
 
 # Installation method can be via subversion checkout or tarball
 default[:misterhouse][:install_method] = "subversion"
-default[:misterhouse][:subversion][:branch] = "master"
+default[:misterhouse][:subversion][:branch] = "trunk"
 default[:misterhouse][:tarball][:version] = "2.105"
