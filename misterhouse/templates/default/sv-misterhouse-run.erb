@@ -1,6 +1,5 @@
 #!/bin/sh
 
-export JAVA_HOME=/usr/java/jdk
 cd <%= node[:misterhouse][:dir] %>
 exec 2>&1
-exec chpst -u solr /usr/bin/java -Xms128M -Xmx1024M -jar /srv/solr/start.jar
+exec chpst -u <%= node[:misterhouse][:user] %> /usr/local/bin/mh

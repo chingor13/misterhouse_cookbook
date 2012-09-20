@@ -3,9 +3,11 @@ directory node[:misterhouse][:dir] do
   mode "0755"
 end
 
+group node[:misterhouse][:group]
+
 user node[:misterhouse][:user] do
   gid node[:misterhouse][:group]
-  hode node[:misterhouse][:dir]
+  home node[:misterhouse][:dir]
 end
 
 directory node[:misterhouse][:dir] do
