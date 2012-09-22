@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cd <%= node[:misterhouse][:dir] %>
+cd <%= node[:misterhouse][:dir] %>/bin
 exec 2>&1
-exec chpst -u <%= node[:misterhouse][:user] %> /usr/local/bin/mh
+exec chpst -u <%= node[:misterhouse][:user] %> ./mh
